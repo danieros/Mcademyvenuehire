@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mcademy training venue</title>
     <script src="Scripts/jquery-2.1.4.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid body-content">
         <form id="form1" runat="server">
-            <div style="background-color: #F2F2F2">
+            <div class="fullheading">
                 <div class="heading">
                     MCademy
                 </div>
@@ -34,8 +34,8 @@
 
 
             </div>
-            <div style="background-color: #F2F2F2; border-top: 1px solid black; padding: 5px 0 5px 0; text-align: center;">
-                                <a href="Home.aspx">Home</a>
+            <div class="footer">
+                <a href="Home.aspx">Home</a>
                 |
                <a href="Packages.aspx">Packages</a>
                 |

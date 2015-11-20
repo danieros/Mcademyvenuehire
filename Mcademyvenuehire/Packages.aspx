@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid body-content">
         <form id="form1" runat="server">
-            <div style="background-color: #F2F2F2">
+            <div class="fullheading">
                 <div class="heading">
                     MCademy
                 </div>
@@ -62,7 +62,7 @@
                 </ul>
 
             </div>
-            <div style="background-color: #F2F2F2; border-top: 1px solid black; padding: 5px 0 5px 0; text-align: center;">
+            <div class="footer">
                 <a href="Home.aspx">Home</a>
                 |
                 <a href="Gallery.aspx">Gallery</a>
