@@ -1,31 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="Mcademyvenuehire.ContactUs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="Mcademyvenuehire.ContactUsNew" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mcademy training venue</title>
-    <script src="Scripts/jquery-2.1.4.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/Site.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container-fluid body-content">
-        <form id="form1" runat="server">
-            <div class="fullheading">
-                <div class="heading">
-                    MCademy
-                </div>
-                <div class="subheading">
-                    Conferences, Training, Corporate/Social functions & Weddings 
-                </div>
-                <div class="subsubheading">
-                    Contacts Us!
-                </div>
-            </div>
+            <div class="header">
+            Contact us
+        </div>
+
+    <div class="col-sm-12" style="padding-left: 0px !important; padding-right: 0px !important; margin-bottom: 20px;">
+        <div class="texttop" style="text-align: left !important; padding-left: 10px">
             <div style="text-align: center">
                 <br />
                 <p><b>DEFACTO INVESTMENTS 154 (PTY) LTD</b></p>
@@ -34,18 +16,6 @@
 
 
             </div>
-            <div class="footer">
-                <a href="Home.aspx">Home</a>
-                |
-               <a href="Packages.aspx">Packages</a>
-                |
-                <a href="Gallery.aspx">Gallery</a>
-                |
-                <a href="FAQ.aspx">FAQ’s & Terms & Conditions</a>
-
-
-            </div>
-        </form>
+        </div>
     </div>
-</body>
-</html>
+</asp:Content>

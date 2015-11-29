@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Mcademyvenuehire
 {
-    public partial class FAQnew : System.Web.UI.Page
+    public partial class Constuction : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

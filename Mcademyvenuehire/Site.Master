@@ -8,20 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
-    <asp:PlaceHolder runat="server">
+<%--    <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    </asp:PlaceHolder>--%>
+<%--    <webopt:BundleReference runat="server" Path="~/Content/css" />--%>
 
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="Scripts/jssor.slider.min.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
+        <%--<asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
+                <%--<asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="respond" />
@@ -35,10 +40,10 @@
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
+           <%-- </Scripts>
+        </asp:ScriptManager>--%>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar navbar-inverse fixed-top" style="background-color:#000;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,15 +51,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/" style="font-family: 'Lucida Calligraphy'; font-size: 60px; font-weight: bold; color: white !important; margin-top: 15px;">MCademy</a>
+                    <a class="navbar-brand" runat="server" href="~/" style="font-family: 'Lucida Calligraphy'; font-size: 15px; font-weight: bold; color: white !important; margin-bottom: 30px;">Conferences, Training, Corporate/Social functions & Weddings</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Home.aspx">Home</a></li>
+                        <li><a runat="server" href="~/Packages.aspx">Packages</a></li>
+                        <li><a runat="server" href="~/Gallery.aspx">Gallery</a></li>
+                        <li><a runat="server" href="~/FAQ.aspx">FAQ and Terms & Conditions</a></li>
+                        <li><a runat="server" href="~/ContactUs.aspx">Contact Us</a></li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <%--                    <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
@@ -69,7 +77,7 @@
                                 </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>
+                    </asp:LoginView>--%>
                 </div>
             </div>
         </div>
@@ -77,9 +85,9 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            <div class="footerstrip">
+                © Copyright  <%: DateTime.Now.Year %> M.C. Van Der Berg  . All Rights Reserved.
+            </div>
         </div>
     </form>
 </body>
